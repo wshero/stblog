@@ -1,5 +1,5 @@
+#summary 介绍STBlog 0.1.x的安装过程和注意事项
 #labels Featured,Phase-Deploy
-#本文主要详细介绍STBlog 0.1 alpha的首次安装过程。
 
 = Introduction =
 
