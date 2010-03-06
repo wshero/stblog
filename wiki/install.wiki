@@ -3,7 +3,7 @@
 
 = Introduction =
 
-本文主要详细介绍STBlog的首次安装过程，使用版本: 0.1.x。
+本文主要详细介绍STBlog的首次安装过程，适用版本: 0.1.x。
 
 
 = Details =
