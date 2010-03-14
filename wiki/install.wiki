@@ -15,7 +15,7 @@
   * 在服务器的Mysql数据库中创建一个新数据库，名称可以自定义，比如：stblog_db
   * 打开解压后的stblog源代码文件夹，找到并打开"相关文档"文件夹，将DB.SQL导入你上一步创建好的数据库中
 
-3. 程序的配置
+3. 程序和权限的配置
 
 *基本配置*
 
@@ -39,3 +39,25 @@ $db['default']['username'] = "root";//你的mysql数据库用户名
 $db['default']['password'] = "root";//你的mysql数据库密码
 $db['default']['database'] = "stblog";//你在第2步中创建的数据库的名称
 }}}
+
+*目录权限设置*
+
+请保证以下目录/文件夹的可读可写权限，比如在linux主机下设置其权限为777：
+
+{{{
+./uploads
+./themes
+./application/cache
+./application/dbcache
+}}}
+
+4. 打开你的浏览器，输入博客的URL，使用如下默认用户名和密码登陆stblog后台系统：
+
+{{{
+用户名：admin
+密码： STBLOG
+}}}
+
+请第一时间修改你的用户名和登陆密码。
+
+5. 设置完成，开始享用stblog给你提供的博客盛宴吧!
