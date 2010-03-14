@@ -21,7 +21,13 @@
 
 使用文本编辑器，打开application/config.php文件，做以下设置并保存.
 
-   修改$config['base_url']为stblog程序根目录所对应的URL， *注意结尾要加左斜杠* 。比如我将stblog安装在www.example.com所在服务器的一个叫做stblog的目录下，那么这里就应该填写$config['base_url']= "http://www.example.com/stblog/";
+修改以下配置项为stblog程序根目录所对应的URL， *注意结尾要加左斜杠* 。
+
+{{{
+$config['base_url']= "http://www.example.com/stblog/";
+}}}
+
+比如以上配置我将stblog安装在www.example.com所在服务器的一个叫做stblog的目录下。
 
 *数据库配置*
 
