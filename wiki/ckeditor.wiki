@@ -5,7 +5,7 @@
 
 本文介绍如何在后台开启ckeditor可视化编辑器.
 
-[http://www.ckeditor.net CKEditor]是一款优秀的WYSIWYG所见即所得编辑器，通过它，你可以在网页用象使用MS WORD一样来编辑和排版你的日志内容。
+[http://ckeditor.com/ CKEditor]是一款优秀的WYSIWYG所见即所得编辑器，通过它，你可以在网页用象使用MS WORD一样来编辑和排版你的日志内容。
 
 = 原理 =
 
