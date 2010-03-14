@@ -1,4 +1,5 @@
 #summary 如何开启stblog后台的默认垃圾留言和引用防治插件.
+#labels Featured,Phase-Deploy
 
 = 介绍 =
 
@@ -20,8 +21,12 @@
 
 {{{
 const API_KEY = 'e967c5f40d01'; //这里修改为你从注册wordpress.com所获得到的key
-}}
+}}}
 
 3. 保存文件并上传到服务器。
 
 * 激活插件 *
+
+使用你的管理员账号和密码登陆后台管理界面。
+
+找到"控制台"/“插件”，进入插件管理界面，点击“激活”按钮激活"Antispam: SPAM防治插件(Akismet)"。
