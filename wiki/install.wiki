@@ -1,14 +1,35 @@
 #summary 介绍STBlog 0.1.x的安装过程和注意事项
 #labels Featured,Phase-Deploy
 
-= Introduction =
+= 概述 =
 
-本文主要详细介绍STBlog的首次安装过程，适用版本: 0.1.x。
+本文主要介绍STBlog的首次安装过程，适用版本: 0.1.x。需要注意的是，目前版本的stblog不支持自动安装，所有步骤均须手动。
 
 
-= Details =
+= 详细步骤 =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+1. 下载并解压stblog源代码压缩文件，将其上传到WEB SERVER（Apache/IIS）所在的WEB目录中（比如www或者htdocs）。
+
+2. 创建程序所需的数据库
+  
+  * 在服务器的Mysql数据库中创建一个新数据库，名称可以自定义，比如：stblog_db
+  * 打开解压后的stblog源代码文件夹，找到并打开"相关文档"文件夹，将DB.SQL导入你上一步创建好的数据库中
+
+3. 程序的配置
+
+*基本配置*
+
+使用文本编辑器，打开application/config.php文件，做以下设置并保存.
+
+   修改$config['base_url']为stblog程序根目录所对应的URL， *注意结尾要加左斜杠* 。比如我将stblog安装在www.example.com所在服务器的一个叫做stblog的目录下，那么这里就应该填写$config['base_url']= "http://www.example.com/stblog/";
+
+*数据库配置*
+
+使用文本编辑器，打开application/database.php文件，找到以下区块设置并保存.
+
+{{{
+$db['default']['hostname'] = "localhost";//你的mysql数据库所在的主机名，可以为域名或IP地址
+$db['default']['username'] = "root";//你的mysql数据库用户名
+$db['default']['password'] = "root";//你的mysql数据库密码
+$db['default']['database'] = "stblog";//你在第2步中创建的数据库的名称
+}}}
