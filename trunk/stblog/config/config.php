@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://example.com/";
+$config['base_url']	= BASE_URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ $config['url_suffix'] = "";
 | than english.
 |
 */
-$config['language']	= "english";
+$config['language']	= "zh-cn";
 
 /*
 |--------------------------------------------------------------------------
@@ -88,7 +88,7 @@ $config['charset'] = "UTF-8";
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 
 /*
@@ -103,7 +103,7 @@ $config['enable_hooks'] = FALSE;
 | http://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'ST_';
 
 
 /*
@@ -173,7 +173,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------
@@ -217,7 +217,8 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = "";
+// You should CHANGE this value before your app is in production environment.
+$config['encryption_key'] = "Kew@a^z%U9&8";
 
 /*
 |--------------------------------------------------------------------------
@@ -237,12 +238,12 @@ $config['encryption_key'] = "";
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'ci_session';
+$config['sess_cookie_name']		= 'sTb';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
-$config['sess_use_database']	= FALSE;
-$config['sess_table_name']		= 'ci_sessions';
+$config['sess_encrypt_cookie']	= TRUE;
+$config['sess_use_database']	= TRUE;
+$config['sess_table_name']		= 'sessions';
 $config['sess_match_ip']		= FALSE;
 $config['sess_match_useragent']	= TRUE;
 $config['sess_time_to_update']	= 300;
@@ -257,9 +258,9 @@ $config['sess_time_to_update']	= 300;
 | 'cookie_path'   =  Typically will be a forward slash
 |
 */
-$config['cookie_prefix']	= "";
-$config['cookie_domain']	= "";
-$config['cookie_path']		= "/";
+$config['cookie_prefix']	= "stb_";
+$config['cookie_domain']	= ($_SERVER['SERVER_NAME'] == 'localhost' ? '' : preg_replace('/^www\./', '', $_SERVER['SERVER_NAME']));
+$config['cookie_path']		= BASE_URI;
 
 /*
 |--------------------------------------------------------------------------
@@ -313,7 +314,7 @@ $config['compress_output'] = FALSE;
 | regarding date handling.
 |
 */
-$config['time_reference'] = 'local';
+$config['time_reference'] = 'gmt';
 
 
 /*
