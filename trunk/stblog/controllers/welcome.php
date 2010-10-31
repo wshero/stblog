@@ -5,6 +5,8 @@ class Welcome extends Controller {
 	function Welcome()
 	{
 		parent::Controller();
+		
+		$this->output->enable_profiler(TRUE);
 	}
 
 	function index()
