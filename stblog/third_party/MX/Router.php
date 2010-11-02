@@ -1,7 +1,7 @@
 <?php (defined('BASEPATH')) OR exit('No direct script access allowed');
 
 /* load the MX core module class */
-require dirname(__FILE__).'/Modules.php';
+require APPPATH . 'third_part/MX/Modules.php';
 
 /**
  * Modular Extensions - HMVC
