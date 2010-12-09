@@ -1,3 +1,5 @@
+#summary 本wiki用来记录Stblog一路走来的发布版本及其更新日志
+
 = STBLOG 版本更新日志 =
 
 本wiki用来记录Stblog一路走来的发布版本及其更新日志
